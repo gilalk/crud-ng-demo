@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col-12">
+        <a *ngFor="let link of items" 
+        class="btn btn-info m-1"
+        routerLink="/{{link.link}}"
+        [routerLinkActive]="'choosen'" >{{link.title}}</a>
+    </div>
+</div>
+<!-- <div class="row">
+    <div class="col-12">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active m-1" 
+              aria-current="page"
+              *ngFor="let link of items"
+              routerLink="/{{link.link}}">{{link.title}}</a>
+            </li>
+          </ul>
+    </div>
+</div> -->
