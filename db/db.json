@@ -1,19 +1,23 @@
 {
-  "courses": [
+  "users": [
     {
       "id": 1,
-      "name": "Fionnula",
-      "desc": "Snow goose",
-      "isActive": false,
-      "price": 45,
-      "updatedAt": "1533306191"
+      "email": "abc@gmail.com",
+      "password": "a12345"
     },
+    {
+      "id": 2,
+      "email": "gil@gmail.com",
+      "password": "a56789"
+    }
+  ],
+  "courses": [
     {
       "id": 2,
       "name": "Frasier",
       "desc": "South American sea lion",
       "isActive": true,
-      "price": 62,
+      "price": 64,
       "updatedAt": "1532926381"
     },
     {
@@ -319,6 +323,14 @@
       "isActive": false,
       "price": 25,
       "updatedAt": "1555432187"
+    },
+    {
+      "name": "Python",
+      "desc": "learn developement with python",
+      "price": 150,
+      "isActive": true,
+      "id": 41,
+      "updatedAt": "2022-04-15T00:22:16.476Z"
     }
   ]
 }

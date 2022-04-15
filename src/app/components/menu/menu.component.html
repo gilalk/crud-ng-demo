@@ -1,9 +1,12 @@
 <div class="row">
-    <div class="col-12">
+    <div class="col-11">
         <a *ngFor="let link of items" 
         class="btn btn-info m-1"
         routerLink="/{{link.link}}"
         [routerLinkActive]="'choosen'" >{{link.title}}</a>
+    </div>
+    <div class="col-1">
+        <button class="btn btn-danger" (click)="logout()">Logout</button>
     </div>
 </div>
 <!-- <div class="row">

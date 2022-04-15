@@ -1,1 +1,61 @@
-<p>edit-course works!</p>
+<div class="row">
+    <div class="col-8 offset-2">
+        <h2>Edit Course</h2>
+        
+        <form #f="ngForm" (submit)="onSubmit(f.value)">
+            <div class="mb-3">
+                <label for="id" class="form-label">Id</label>
+                <input 
+                disabled
+                class="form-control"
+                ngModel
+                [(ngModel)]="course.id"
+                name="id"
+                type="text">
+            </div>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input
+                 class="form-control"
+                 ngModel
+                 #name="ngModel"
+                 [(ngModel)]="course.name"
+                 name="name"
+                 required
+                 minlength="3"
+                 type="text">
+                 <div class="form-text" *ngIf="name.touched && name.invalid">
+                    <p style="color:crimson;">The Name must contain at least 3 letters</p>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="desc" class="form-label">Description</label>
+                <input type="text"
+                class="form-control"
+                ngModel
+                name="desc"
+                [(ngModel)]="course.desc"
+                #desc="ngModel">
+            </div>
+            <div class="mb-3">
+                <label for="price" class="form-label">Price</label>
+                <input type="number"
+                class="form-control"
+                ngModel
+                name="price"
+                [(ngModel)]="course.price"
+                #price="ngModel">
+            </div>
+            <div class="form-check mb-3">
+                <input type="checkbox" class="form-check-input"
+                ngModel
+                [(ngModel)]="course.isActive"
+                name="isActive">
+                <label for="flexCheckDefault" class="form-check-label">
+                    Active
+                </label>
+            </div>
+            <button class="btn btn-success">Save Course</button>
+            </form>
+    </div>
+</div>
