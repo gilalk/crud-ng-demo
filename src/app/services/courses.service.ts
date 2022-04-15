@@ -16,7 +16,7 @@ export class CoursesService {
    }
 
    // GET
-   getCources() {
+   getCourses() {
      return this.http.get(`${this.server}/courses`);
    }
 

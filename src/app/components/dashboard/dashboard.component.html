@@ -1,1 +1,16 @@
-<p>dashboard works!</p>
+<h1>System Dashboard</h1>
+<div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+    <div class="card-header">Active Courses</div>
+    <div class="card-body">
+      <h5 class="card-title">{{ totalActive }} courses </h5>
+      <p class="card-text">are running right now in the academy.</p>
+    </div>
+  </div>
+
+  <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+    <div class="card-header">Avrage Price</div>
+    <div class="card-body">
+      <h5 class="card-title">{{ avgPrice | number:'2.2-2' }}</h5>
+      <p class="card-text">for active courses.</p>
+    </div>
+  </div>

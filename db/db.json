@@ -32,9 +32,9 @@
       "id": 4,
       "name": "Ilario",
       "desc": "Nyala",
-      "isActive": false,
+      "isActive": true,
       "price": 80,
-      "updatedAt": "1443815627"
+      "updatedAt": "2022-04-15T03:12:33.184Z"
     },
     {
       "id": 5,
@@ -48,9 +48,9 @@
       "id": 6,
       "name": "Beverlee",
       "desc": "Striped skunk",
-      "isActive": true,
+      "isActive": false,
       "price": 95,
-      "updatedAt": "1464024272"
+      "updatedAt": "2022-04-15T03:13:01.022Z"
     },
     {
       "id": 7,
@@ -88,9 +88,9 @@
       "id": 11,
       "name": "Hestia",
       "desc": "Seal, northern fur",
-      "isActive": true,
+      "isActive": false,
       "price": 86,
-      "updatedAt": "1602509589"
+      "updatedAt": "2022-04-15T03:12:50.800Z"
     },
     {
       "id": 12,

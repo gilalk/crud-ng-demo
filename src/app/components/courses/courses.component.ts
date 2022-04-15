@@ -13,7 +13,7 @@ export class CoursesComponent implements OnInit {
 
   constructor(private _courseService: CoursesService) { 
     _courseService
-    .getCources()
+    .getCourses()
     .subscribe((courses:any) => {
       this.courses = courses
     });
